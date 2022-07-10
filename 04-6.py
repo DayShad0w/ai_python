@@ -21,11 +21,11 @@ for x in itertools.count(begin):
         print(x)
 
 itr = 0
-a = input("Введите последовательность символов: ")
-for x in itertools.cycle(a):
+symbols = input("Введите последовательность символов: ")
+for x in itertools.cycle(symbols):
     # здесь можно задать любое условие, умножить на 2 например или передать количество циклов
     # выбрано самое простое - вывести все символы 1 раз
-    if itr >= len(a):
+    if itr >= len(symbols):
         break
     print(x)
     itr += 1
